@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-space: "Space Grotesk";
+}
+
+@layer utilities {
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-4 lg:px-[6.25rem];
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+  .btn {
+    @apply px-[2.188rem] h-[4.25rem] py-5  rounded-[0.875rem] shadow-none  text-xl;
+  }
+
+  .headline {
+    @apply font-medium text-[2.5rem] leading-tight bg-lime-300 text-black rounded-md px-[0.438rem];
+  }
+
+  .distance {
+    @apply mt-[8.75rem] mb-[6.25rem];
+  }
+}
